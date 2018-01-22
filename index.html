@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>
+            $(document).ready(function (){
+                $("#click").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#skills").offset().top
+                    }, 2000);
+                });
+            });
+    </script>
+</head>
+<body>
+  <header>
+    <div id="particles-js"></div>
+
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a href="index.html" class="link">Home</a></li>
+          <li><a href="Portfolio.html" class="link">Portfolio</a></li>
+        </ul>
+    </nav>
+    <span id="menuIcon" onclick="openNav()">&#9776;</span>
+    <span id = "menu" onclick="openNav()">Menu</span>
+    <div id="header_section_content">
+      <h1>Welcome to my page</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#" class="head_link">See my Projects</a>
+    </div>
+    <a href="#" id ="click"><img src = "images/down_arrow.png" id ="scroll"/></a>
+  </header>
+  <div id="about">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel vehicula ex, quis venenatis leo. Ut interdum in lorem vitae eleifend. Sed quam ipsum, sollicitudin eget metus quis, laoreet eleifend enim. Nam pellentesque quam at facilisis fringilla. Nulla vitae neque et nulla pretium scelerisque pretium nec urna. Duis lectus orci, facilisis et lectus sed, sollicitudin bibendum turpis. Fusce laoreet ipsum at eleifend consectetur. Vestibulum maximus augue a diam ultricies blandit. Aliquam erat volutpat. </p>
+  </div>
+  <div class="grid_container">
+      <img class="grid_item" src="images/image1.jpg">
+      <img class="grid_item" src="images/image2.jpg">
+      <img class="grid_item" src="images/image3.jpg">
+      <img class="grid_item" src="images/image4.jpg">
+      <img class="grid_item" src="images/image5.jpg">
+      <img class="grid_item" src="images/image6.jpg">
+      <img class="grid_item" src="images/image7.jpg">
+      <img class="grid_item" src="images/image8.jpg">
+      <img class="grid_item" src="images/image9.jpg">
+      <img class="grid_item" src="images/image10.jpg">
+      <img class="grid_item" src="images/image11.jpg">
+  </div>
+  <div id="skills">
+    <h2>Skills</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel vehicula ex, quis venenatis leo. Ut interdum in lorem vitae eleifend. Sed quam ipsum, sollicitudin eget metus quis, laoreet eleifend enim. Nam pellentesque quam at facilisis fringilla. Nulla vitae neque et nulla pretium scelerisque pretium nec urna. Duis lectus orci, facilisis et lectus sed, sollicitudin bibendum turpis. Fusce laoreet ipsum at eleifend consectetur. Vestibulum maximus augue a diam ultricies blandit. Aliquam erat volutpat. </p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 
+    'js/particles.json', function(){
+      console.log('particles.json loaded...');
+    })
+  </script>
+  <script>
+                function openNav() {
+                    var w = window.innerWidth;
+                    if(w <= 520){
+                        document.getElementById("mySidenav").style.width = "100%";
+                    }else{
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+        </script>
+</body>
+</html>
